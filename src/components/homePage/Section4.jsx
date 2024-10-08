@@ -22,7 +22,7 @@ const data = [
 ];
 export default function Section4() {
   return (
-    <section className="py-10 px-5 md:p-32">
+    <section className="py-10 px-5 md:p-32 bg-[#001F47]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto flex flex-col py-2 text-white mb-10">
         <h4 className="text-6xl font-medium text-center mb-8">Our Values</h4>
         <h5 className="text-3xl font-medium text-center mb-8">

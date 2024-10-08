@@ -1,7 +1,7 @@
 export default function Section2() {
   return (
     <section
-      className="p-10 md:p-24 mx-auto " // Equivalent to padding-top and padding-bottom: 80px;
+      className="p-10 md:p-24 mx-auto bg-[#001F47]" // Equivalent to padding-top and padding-bottom: 80px;
       style={{
         "--grid-row-no-full-width": "960px",
         "--grid-row-full-width": "1920px",

@@ -7,7 +7,7 @@ const navItems = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 p-10 font-[sans-serif] tracking-wide">
+    <footer className="bg-gray-900 p-10 font-[sans-serif] tracking-wide pb-0">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           {navItems.map((el) => (
