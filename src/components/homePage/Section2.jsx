@@ -1,7 +1,8 @@
+import { section2_paragraphs } from "../../data/homepage.js";
 export default function Section2() {
   return (
     <section
-      className="p-10 md:p-24 mx-auto bg-[#001F47]" // Equivalent to padding-top and padding-bottom: 80px;
+      className="p-10 md:p-24 mx-auto bg-[#002e29]"
       style={{
         "--grid-row-no-full-width": "960px",
         "--grid-row-full-width": "1920px",
@@ -14,7 +15,7 @@ export default function Section2() {
         {/* First Column */}
         <div className="flex flex-col items-center p-5 my-auto mb-20 md:mb-auto">
           <h3 className="text-5xl font-medium text-center text-white mb-8">
-            The Best Raw Material
+            The Finest Food Beverage
           </h3>
           <a
             href="/products"
@@ -28,16 +29,11 @@ export default function Section2() {
 
         {/* Second Column */}
         <div className="flex items-center flex-col my-auto mb-10 md:mb-auto">
-          <p className="text-[#ffffff] text-center mb-3">
-            {
-              "At our company, we're passionate about bringing you the freshest and most delicious fish and meat products available. We work closely with trusted suppliers to source only the highest quality products. Our range includes everything from meat to seafood, all carefully selected for their exceptional taste and texture."
-            }
-          </p>
-          <p className="text-[#ffffff] text-center mt-2">
-            {
-              "With a commitment to sustainability and ethical practices, you can feel good knowing that you're enjoying the best while supporting responsible production methods."
-            }
-          </p>
+          {section2_paragraphs.map((par, i) => (
+            <p className="text-[#ffffff] text-center mb-3" key={`${par}-${i}`}>
+              {par}
+            </p>
+          ))}
         </div>
 
         {/* Third Column (Image Container for 3rd and 4th Images) */}
@@ -45,7 +41,7 @@ export default function Section2() {
           {/* Third Element (Image 1) */}
           <div className="w-max">
             <img
-              src="/assets/homepage/fish-p1.jpg"
+              src="/assets/homepage/cut-1.jpg"
               className="w-56 h-auto md:mb-10"
               alt="Product Image 1"
             />
@@ -54,7 +50,7 @@ export default function Section2() {
           {/* Fourth Element (Image 2) */}
           <div className="w-max">
             <img
-              src="/assets/homepage/fish-p2.jpg"
+              src="/assets/homepage/cut-2.jpg"
               className="w-56 h-auto md:mt-10"
               alt="Product Image 2"
             />

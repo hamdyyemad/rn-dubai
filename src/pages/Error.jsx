@@ -7,7 +7,7 @@ export default function Error() {
   return (
     <>
       <Header />
-      <section className="m-auto pt-32 h-screen w-screen relative mb-10">
+      <section className="m-auto pt-32 h-screen w-screen relative mb-10 bg-[#002e29]">
         <div className="flex flex-col py-2 text-white m-auto absolute inset-y-1/2 inset-x-0">
           <h4 className="text-6xl font-medium text-center mb-8">
             {error?.status ?? "404"} | Page Not Found

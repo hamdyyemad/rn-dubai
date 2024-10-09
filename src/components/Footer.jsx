@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="flex justify-center mt-8 space-x-6">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/rn-dubai"
             className="text-[#001F47] hover:text-gray-900 bg-white p-1.5"
           >
             <span className="sr-only">LinkedIn</span>
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Email */}
           <a
-            href="mailto:email@example.com"
+            href="mailto:info@rn-dubai.com"
             className="text-[#001F47] hover:text-gray-900 bg-white p-1.5"
           >
             <span className="sr-only">Email</span>
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Phone */}
           <a
-            href="tel:+123456789"
+            href="tel:+971501029662"
             className="text-[#001F47] hover:text-gray-900 bg-white p-1.5 m-auto"
           >
             <span className="sr-only">Phone</span>

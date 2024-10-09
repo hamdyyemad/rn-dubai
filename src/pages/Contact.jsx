@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section
-      className="m-auto pt-32  w-screen relative pb-10 md:px-20" // Equivalent to padding-top and padding-bottom: 80px;
+      className="m-auto pt-32  w-screen relative pb-10 md:px-20 bg-[#002e29]" // Equivalent to padding-top and padding-bottom: 80px;
       style={{
         "--grid-row-no-full-width": "960px",
         "--grid-row-full-width": "1920px",
@@ -10,7 +10,7 @@ export default function Contact() {
         "--grid-row-top-level-padding-lg": "8px",
       }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 p-8 mx-auto min-w-full bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 p-8 mx-auto min-w-full bg-[#e6eceb] shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
         <div>
           <h1 className="text-3xl font-extrabold">{"Let's Talk"}</h1>
           <p className="text-sm text-gray-400 mt-3">
@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="mt-12">
             <h2 className="text-lg font-extrabold">Email</h2>
             <ul className="mt-3">
-              <li className="flex items-center">
+              <li className="flex items-center mb-4">
                 <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +37,53 @@ export default function Contact() {
                   </svg>
                 </div>
                 <a
-                  target="blank"
-                  href="#"
+                  href="mailto:info@rn-dubai.com"
                   className="text-[#007bff] text-sm ml-3"
                 >
                   <small className="block">Mail</small>
-                  <strong>https://gmail.com</strong>
+                  <strong>info@rn-dubai.com</strong>
+                </a>
+              </li>
+              <li className="flex items-center mb-4">
+                <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="#007bff"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                  </svg>
+                </div>
+                <a
+                  href="tel:+971501029662"
+                  className="text-[#007bff] text-sm ml-3"
+                >
+                  <small className="block">Phone</small>
+                  <strong>+971 50 102 9662</strong>
+                </a>
+              </li>
+              <li className="flex items-center">
+                <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#007bff"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                  </svg>
+                </div>
+                <a
+                  href="mailto:info@rn-dubai.com"
+                  className="text-[#007bff] text-sm ml-3"
+                >
+                  <small className="block">Location</small>
+                  <strong>
+                    204 360, AL SAFIL AL MARARR, DUBAI, UNITED ARAB EMAIRATES.
+                  </strong>
                 </a>
               </li>
             </ul>
@@ -99,7 +140,7 @@ export default function Contact() {
           </div>
           <div className="mt-12 m-auto w-full  md:ml-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13809.662076350305!2d31.202807099999998!3d30.082283949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410bf577e239%3A0x17a577479ec6487e!2z2KXZhdio2KfYqNip2Iwg2KfZhNmF2YbZitix2KnYjCDYpdmF2KjYp9io2KnYjCDZhdit2KfZgdi42Kkg2KfZhNis2YrYstip!5e0!3m2!1sar!2seg!4v1728428963957!5m2!1sar!2seg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14431.17263857585!2d55.3286344898118!3d25.277542556117652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434deb572bb9%3A0x33ab218fbacb4b9a!2zQWwgU2FmaSBCdWlsZGluZyAtINi02KfYsdi5INmoIC0g2K_Zitix2KkgLSDYp9mE2YXYsdixIC0g2K_YqNmKIC0g2KfZhNil2YXYp9ix2KfYqiDYp9mE2LnYsdio2YrYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1728481717958!5m2!1sar!2seg"
               className="mx-auto w-[240px] sm:w-[500px]"
               width="500"
               height="350"
