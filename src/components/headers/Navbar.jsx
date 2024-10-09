@@ -50,7 +50,7 @@ export default function Navbar() {
       <ul
         className={
           nav
-            ? `fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#001F47] ease-in-out duration-500 z-50 pt-2`
+            ? `fixed md:hidden left-0 top-0 w-[60%] h-full  bg-[#001F47] ease-in-out duration-500 z-50 pt-2`
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
@@ -61,7 +61,7 @@ export default function Navbar() {
             href={item.href}
             onClick={() => setNav(false)}
             key={item.id}
-            className={`block p-4 border-b rounded-xl hover:bg-[#43D0C1] hover:bg-opacity-20 duration-300 hover:text-black cursor-pointer ${
+            className={`block p-4  hover:bg-[#43D0C1] hover:bg-opacity-20 duration-300 hover:text-black cursor-pointer ${
               location.pathname === item.href &&
               "bg-[#43D0C1] bg-opacity-50 text-[#43D0C1]"
             }`}
