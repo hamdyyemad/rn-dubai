@@ -1,7 +1,23 @@
 {
   "name": "rn-dubai",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "2.0.0",
+  "description": "RN Dubai - Landing Page for: ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C ",
+  "author": "Hamdy Emad <hamdyyemad@aol.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamdyyemad/rn-dubai.git"
+  },
+  "keywords": [
+    "React",
+    "Landing Page",
+    "tailwind"
+  ],
+  "bugs": {
+    "url": "https://github.com/hamdyyemad/rn-dubai/issues"
+  },
+  "homepage": "https://github.com/hamdyyemad/rn-dubai#",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
