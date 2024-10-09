@@ -1,7 +1,7 @@
 const navItems = [
-  { id: 1, text: "About Us", href: "/" },
+  { id: 1, text: "Home", href: "/" },
   { id: 2, text: "Products", href: "/products" },
-  { id: 3, text: "News", href: "/news" },
+  { id: 3, text: "About Us", href: "/about-us" },
   { id: 4, text: "Contact Us", href: "/contact-us" },
 ];
 

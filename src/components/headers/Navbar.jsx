@@ -5,9 +5,9 @@ import { useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
 const navItems = [
-  { id: 1, text: "About Us", href: "/" },
+  { id: 1, text: "Home", href: "/" },
   { id: 2, text: "Products", href: "/products" },
-  { id: 3, text: "News", href: "/news" },
+  { id: 3, text: "About Us", href: "/about-us" },
   { id: 4, text: "Contact Us", href: "/contact-us" },
 ];
 
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`absolute flex justify-between items-center h-24 w-full mx-auto px-6 text-gray-200 top-0 left-0 right-0 z-50 transition-colors duration-300 bg-[#002e29]`}
+      className={`absolute flex justify-between items-center h-24 w-full mx-auto px-6 text-gray-200 top-0 left-0 right-0 z-50 transition-colors duration-300 bg-gradient-to-r from-[#0b3e27] to-[#197149]`}
     >
       <Logo cssStyles={"text-2xl ml-3 font-bold"} />
 
@@ -50,7 +50,7 @@ export default function Navbar() {
       <ul
         className={
           nav
-            ? `fixed md:hidden left-0 top-0 w-[60%] h-full  bg-[#002e29] ease-in-out duration-500 z-50 pt-2`
+            ? `fixed md:hidden left-0 top-0 w-[60%] h-full  bg-gradient-to-r from-[#0b3e27] to-[#197149] ease-in-out duration-500 z-50 pt-2`
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >

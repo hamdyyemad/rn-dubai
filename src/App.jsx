@@ -8,18 +8,18 @@ import {
 // Layouts
 import Layout from "./components/Layout";
 // Pages
-import HomePage from "./pages/HomePage";
+import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import News from "./pages/News";
+import About from "./pages/About";
 import Error from "./pages/Error";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={<Error />}>
-      <Route index element={<HomePage />} loader={async () => null} />
+      <Route index element={<Home />} loader={async () => null} />
       <Route path="contact-us" element={<Contact />} />
-      <Route path="news" element={<News />} />
+      <Route path="about-us" element={<About />} />
       <Route path="*" element={<NotFound />} loader={async () => null} />
     </Route>
   )

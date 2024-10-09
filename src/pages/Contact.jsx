@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section
-      className="m-auto pt-32  w-screen relative pb-10 md:px-20 bg-[#002e29]" // Equivalent to padding-top and padding-bottom: 80px;
+      className="m-auto pt-32  w-screen relative pb-10 md:px-20 bg-gradient-to-r from-[#0b3e27] to-[#197149]" // Equivalent to padding-top and padding-bottom: 80px;
       style={{
         "--grid-row-no-full-width": "960px",
         "--grid-row-full-width": "1920px",

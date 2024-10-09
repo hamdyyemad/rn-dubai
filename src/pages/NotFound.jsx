@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <section className="m-auto pt-32 h-screen w-screen relative pb-10 bg-[#002e29]">
+    <section className="m-auto pt-32 h-screen w-screen relative pb-10 bg-gradient-to-r from-[#0b3e27] to-[#197149]">
       <div className="flex flex-col py-2 text-white m-auto absolute inset-y-1/2 inset-x-0 mb-20">
         <h4 className="text-6xl font-medium text-center mb-8">
           404 | Page Not Found

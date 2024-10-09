@@ -1,7 +1,7 @@
-import { section4_paragraphs } from "../../data/homepage.js";
+import { section4_paragraphs } from "../../data/about.js";
 export default function Section4() {
   return (
-    <section className="py-10 px-5 md:p-32 bg-[#002e29]">
+    <section className="py-10 px-5 md:p-32 bg-gradient-to-r from-[#0b3e27] to-[#197149]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto flex flex-col py-2 text-white mb-10">
         <h4 className="text-6xl font-medium text-center mb-8">Our Values</h4>
         <h5 className="text-3xl font-medium text-center mb-8">

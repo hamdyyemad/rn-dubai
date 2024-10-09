@@ -1,8 +1,8 @@
-import { section2_paragraphs } from "../../data/homepage.js";
+import { section2_paragraphs } from "../../data/about.js";
 export default function Section2() {
   return (
     <section
-      className="p-10 md:p-24 mx-auto bg-[#002e29]"
+      className="p-10 md:p-24 mx-auto bg-gradient-to-r from-[#0b3e27] to-[#197149]"
       style={{
         "--grid-row-no-full-width": "960px",
         "--grid-row-full-width": "1920px",
@@ -41,7 +41,7 @@ export default function Section2() {
           {/* Third Element (Image 1) */}
           <div className="w-max">
             <img
-              src="/assets/homepage/cut-1.jpg"
+              src="/assets/about/cut-1.jpg"
               className="w-56 h-auto md:mb-10"
               alt="Product Image 1"
             />
@@ -50,7 +50,7 @@ export default function Section2() {
           {/* Fourth Element (Image 2) */}
           <div className="w-max">
             <img
-              src="/assets/homepage/cut-2.jpg"
+              src="/assets/about/cut-2.jpg"
               className="w-56 h-auto md:mt-10"
               alt="Product Image 2"
             />

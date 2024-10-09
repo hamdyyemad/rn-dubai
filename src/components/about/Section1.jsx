@@ -1,4 +1,4 @@
-import { section1_paragraphs } from "../../data/homepage.js";
+import { section1_paragraphs } from "../../data/about.js";
 export default function Section1() {
   return (
     <section
@@ -11,7 +11,7 @@ export default function Section1() {
       }}
     >
       <div className="md:static xl:static 2xl:static inset-x-1/2	md:inset-0 flex justify-center items-center mt-24">
-        <div className="bg-[#002e29] text-[#f0ebec] p-16 md:p-20 rounded-2xl shadow-lg max-w-md  md:max-w-2xl lg:max-w-4xl mt-10 mx-auto ">
+        <div className="bg-gradient-to-r from-[#0b3e27] to-[#197149] text-[#f0ebec] p-16 md:p-20 rounded-2xl shadow-lg max-w-md  md:max-w-2xl lg:max-w-4xl mt-10 mx-auto ">
           <h1 className="text-4xl font-bold text-center mb-4">
             The Strength of a Big Group
           </h1>

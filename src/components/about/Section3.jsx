@@ -1,4 +1,4 @@
-import { section3_paragraphs } from "../../data/homepage.js";
+import { section3_paragraphs } from "../../data/about.js";
 export default function Section3() {
   return (
     <section className="bg-white py-10 px-5 md:p-32">
