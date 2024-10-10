@@ -1,35 +1,37 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 export default function Contact() {
   return (
     <>
-      <Helmet>
-        <title>Contact Us | RN Dubai</title>
-        <meta
-          name="description"
-          content="Get in touch with RN Dubai for inquiries about our premium food and beverage trading services. We're here to assist you with any questions or requests."
-        />
-        <meta
-          name="keywords"
-          content="RN Dubai, Contact, food and beverage inquiries, ROWAD ALNAJAH contact, Dubai trading, customer support"
-        />
-        <meta
-          name="author"
-          content="ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
-        />
-        <meta
-          property="og:title"
-          content="Contact Us | RN-Dubai: ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
-        />
-        <meta
-          property="og:description"
-          content="Contact ROWAD ALNAJAH to learn more about our food and beverage products, partnerships, and trading services in Dubai."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://rn-dubai2.vercel.app/contact-us"
-        />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Contact Us | RN Dubai</title>
+          <meta
+            name="description"
+            content="Get in touch with RN Dubai for inquiries about our premium food and beverage trading services. We're here to assist you with any questions or requests."
+          />
+          <meta
+            name="keywords"
+            content="RN Dubai, Contact, food and beverage inquiries, ROWAD ALNAJAH contact, Dubai trading, customer support"
+          />
+          <meta
+            name="author"
+            content="ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
+          />
+          <meta
+            property="og:title"
+            content="Contact Us | RN-Dubai: ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
+          />
+          <meta
+            property="og:description"
+            content="Contact ROWAD ALNAJAH to learn more about our food and beverage products, partnerships, and trading services in Dubai."
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content="https://rn-dubai2.vercel.app/contact-us"
+          />
+        </Helmet>
+      </HelmetProvider>
 
       <section
         className="m-auto pt-32  w-screen relative pb-10 md:px-20 bg-gradient-to-r from-[#0b3e27] to-[#197149]" // Equivalent to padding-top and padding-bottom: 80px;
@@ -123,7 +125,7 @@ export default function Contact() {
               <h2 className="text-lg font-extrabold">Socials</h2>
               <ul className="flex mt-3 space-x-4">
                 <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="javascript:void(0)">
+                  <a href="https://www.linkedin.com/in/rn-dubai">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -139,7 +141,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="javascript:void(0)">
+                  <a href="https://www.linkedin.com/in/rn-dubai">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -155,7 +157,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="javascript:void(0)">
+                  <a href="https://www.linkedin.com/in/rn-dubai">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -177,7 +179,7 @@ export default function Contact() {
                 height="350"
                 frameBorder="0"
                 style={{ border: 0 }}
-                allowfullscreen=""
+                // allowFullScreen
                 loading="lazy"
                 aria-hidden="false"
                 referrerPolicy="no-referrer-when-downgrade"
