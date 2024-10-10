@@ -23,7 +23,7 @@ export default function Navbar() {
     <div
       className={`absolute flex justify-between items-center h-24 w-full mx-auto px-6 text-gray-200 top-0 left-0 right-0 z-50 transition-colors duration-300 bg-gradient-to-r from-[#0b3e27] to-[#197149]`}
     >
-      <Logo cssStyles={"text-2xl ml-3 font-bold"} />
+      <Logo cssStyles={"text-2xl ml-3 font-bold tracking-widest	border p-1"} />
 
       {/* Desktop Navbar */}
       <ul className="hidden md:flex">
