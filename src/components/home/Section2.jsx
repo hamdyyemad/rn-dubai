@@ -6,18 +6,19 @@ export default function Section2() {
         <div className="mb-3">
           <h2 className="text-3xl font-bold">Our Products</h2>
         </div>
+
         <div className="mb-5">
           <Link
             to="/products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
-              background: "url(/assets/home/products/1.jpg) center",
+              background: "url(/assets/home/products/3.jpg) center",
               backgroundSize: "cover",
             }}
           >
             <div className="h-48"></div>
             <h2 className="text-white text-2xl font-bold leading-tight mb-3 pr-5">
-              Beef
+              Fish
             </h2>
             <div className="flex w-full items-center text-sm text-gray-300 font-medium">
               <div>
@@ -51,13 +52,13 @@ export default function Section2() {
             to="/products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
-              background: "url(/assets/home/products/3.jpg) center",
+              background: "url(/assets/home/products/1.jpg) center",
               backgroundSize: "cover",
             }}
           >
             <div className="h-48"></div>
             <h2 className="text-white text-2xl font-bold leading-tight mb-3 pr-5">
-              Fish
+              Beef
             </h2>
             <div className="flex w-full items-center text-sm text-gray-300 font-medium">
               <div>
