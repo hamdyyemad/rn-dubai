@@ -84,7 +84,21 @@ export default function Products() {
             >
               <div className="h-48"></div>
               <h2 className="text-white text-2xl font-bold leading-tight mb-3 pr-5">
-                Meat & Poultry
+                Meat
+              </h2>
+            </div>
+          </div>
+          <div className="mb-5">
+            <div
+              className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
+              style={{
+                background: "url(/assets/home/products/2.jpg) center",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="h-48"></div>
+              <h2 className="text-white text-2xl font-bold leading-tight mb-3 pr-5">
+                Poultry
               </h2>
             </div>
           </div>
