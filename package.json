@@ -44,13 +44,14 @@
     "sitemap": "^8.0.0"
   },
   "reactSnap": {
+    "include": [
+      "/",
+      "/about-us",
+      "/contact-us",
+      "/products"
+    ],
     "inlineStyle": true,
-    "puppeteer": {
-      "args": [
-        "--no-sandbox",
-        "--disable-setuid-sandbox"
-      ]
-    }
+    "output": "dist"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
