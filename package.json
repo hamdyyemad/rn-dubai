@@ -22,7 +22,6 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "postbuild": "react-snap",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "generate-sitemap": "node sitemap-generator.js"
@@ -42,16 +41,6 @@
     "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.16.0",
     "sitemap": "^8.0.0"
-  },
-  "reactSnap": {
-    "include": [
-      "/",
-      "/about-us",
-      "/contact-us",
-      "/products"
-    ],
-    "inlineStyle": true,
-    "output": "dist"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
