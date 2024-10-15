@@ -1,4 +1,4 @@
-import { meatAndPoultryProducts } from "../../data/products";
+import { meatProducts } from "../../data/products";
 export default function MeatProducts() {
   return (
     <>
@@ -17,7 +17,7 @@ export default function MeatProducts() {
         </div>
       </div>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
-        {meatAndPoultryProducts?.map((el) => (
+        {meatProducts?.map((el) => (
           <div
             className="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
             key={el?.id}

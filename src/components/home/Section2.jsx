@@ -12,7 +12,7 @@ export default function Section2() {
             to="/products#sea-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
-              background: "url(/assets/home/products/3.jpg) center",
+              background: "url(/assets/home/products/3.webp) center",
               backgroundSize: "cover",
             }}
           >
@@ -32,7 +32,7 @@ export default function Section2() {
             to="/products#poultry-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
-              background: "url(/assets/home/products/2.jpg) center",
+              background: "url(/assets/home/products/2.webp) center",
               backgroundSize: "cover",
             }}
           >
@@ -52,7 +52,7 @@ export default function Section2() {
             to="/products#meat-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
-              background: "url(/assets/home/products/1.jpg) center",
+              background: "url(/assets/home/products/1.webp) center",
               backgroundSize: "cover",
             }}
           >

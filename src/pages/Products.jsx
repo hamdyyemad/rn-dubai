@@ -17,7 +17,6 @@ export default function Products() {
   useEffect(() => {
     const handleScrollToSection = () => {
       const hash = location.hash; // Get the current hash from the URL
-      console.log(hash);
       switch (hash) {
         case "#sea-products":
           seaRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -51,17 +50,17 @@ export default function Products() {
             <h2 className="text-3xl font-bold">Our Products</h2>
           </div>
           {/* Sea Products Section */}
-          <div ref={seaRef}>
+          <div ref={seaRef} className="my-2">
             <SeaProducts />
           </div>
 
           {/* Meat Products Section */}
-          <div ref={meatRef}>
+          <div ref={meatRef} className="my-2">
             <MeatProducts />
           </div>
 
           {/* Poultry Products Section */}
-          <div ref={poultryRef}>
+          <div ref={poultryRef} className="my-2">
             <PoultryProducts />
           </div>
 

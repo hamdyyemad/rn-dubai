@@ -5,7 +5,7 @@ export default function Section1() {
       id="about"
       className="relative h-full overflow-hidden bg-cover bg-center pb-20"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/about/cover.jpg')`, // Add a gradient overlay with opacity
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/about/cover.webp')`, // Add a gradient overlay with opacity
 
         backgroundAttachment: "fixed", // Fix the background image
       }}

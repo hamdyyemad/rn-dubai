@@ -24,13 +24,13 @@ export default function Section4() {
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-full rounded-lg"
-            src="/assets/home/about-1.jpg"
+            src="/assets/home/about-1.webp"
             alt="fisherman"
             loading="lazy"
           />
           <img
             className="mt-4 w-full lg:mt-10 rounded-lg"
-            src="/assets/home/about-2.jpg"
+            src="/assets/home/about-2.webp"
             alt="boat"
             loading="lazy"
           />
