@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState, useMemo } from "react"; // Import React
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 import Logo from "./Logo";
 
+// Memoize navItems array
 const navItems = [
   { id: 1, text: "Home", href: "/" },
   { id: 2, text: "Products", href: "/products" },
@@ -11,9 +12,27 @@ const navItems = [
   { id: 4, text: "Contact Us", href: "/contact-us" },
 ];
 
+// New NavItem component
+const NavItem = React.memo(function NavItem({ href, isActive, text, onClick }) {
+  return (
+    <Link
+      to={href}
+      onClick={onClick}
+      className={`block p-2 m-2 cursor-pointer duration-300 hover:bg-[#005048] hover:bg-opacity-20 ${
+        isActive && "border-b-2 border-[#b5c7c4] text-[#e6eceb]"
+      }`}
+    >
+      {text}
+    </Link>
+  );
+});
+
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const location = useLocation(); // get current path
+
+  // Memoize current path
+  const currentPath = useMemo(() => location.pathname, [location.pathname]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -28,16 +47,12 @@ export default function Navbar() {
       {/* Desktop Navbar */}
       <ul className="hidden md:flex">
         {navItems.map((item) => (
-          <a
-            href={item.href}
+          <NavItem
             key={item.id}
-            className={`block p-2 m-2 cursor-pointer duration-300  hover:bg-[#005048] hover:bg-opacity-20	 ${
-              location.pathname === item.href &&
-              "border-b-2 border-[#b5c7c4] text-[#e6eceb]"
-            }`}
-          >
-            {item.text}
-          </a>
+            href={item.href}
+            text={item.text}
+            isActive={currentPath === item.href} // Use memoized currentPath
+          />
         ))}
       </ul>
 
@@ -59,17 +74,13 @@ export default function Navbar() {
         />
 
         {navItems.map((item) => (
-          <a
-            href={item.href}
-            onClick={() => setNav(false)}
+          <NavItem
             key={item.id}
-            className={`block p-4  hover:bg-[#b5c7c4] hover:bg-opacity-20 duration-300 hover:text-black cursor-pointer m-2 ${
-              location.pathname === item.href &&
-              "bg-[#3f7169] bg-opacity-50 text-[#e6eceb]"
-            }`}
-          >
-            {item.text}
-          </a>
+            href={item.href}
+            text={item.text}
+            isActive={currentPath === item.href} // Use memoized currentPath
+            onClick={() => setNav(false)}
+          />
         ))}
       </ul>
     </div>

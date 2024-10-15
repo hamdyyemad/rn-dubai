@@ -9,7 +9,7 @@ export default function Section2() {
 
         <div className="mb-5">
           <Link
-            to="/products"
+            to="/products#sea-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
               background: "url(/assets/home/products/3.jpg) center",
@@ -29,7 +29,7 @@ export default function Section2() {
         </div>
         <div className="mb-5">
           <Link
-            to="/products"
+            to="/products#poultry-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
               background: "url(/assets/home/products/2.jpg) center",
@@ -49,7 +49,7 @@ export default function Section2() {
         </div>
         <div className="mb-5">
           <Link
-            to="/products"
+            to="/products#meat-products"
             className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
             style={{
               background: "url(/assets/home/products/1.jpg) center",
@@ -58,7 +58,7 @@ export default function Section2() {
           >
             <div className="h-48"></div>
             <h2 className="text-white text-2xl font-bold leading-tight mb-3 pr-5">
-              Beef
+              Meat
             </h2>
             <div className="flex w-full items-center text-sm text-gray-300 font-medium">
               <div>

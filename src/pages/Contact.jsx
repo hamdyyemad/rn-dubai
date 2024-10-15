@@ -2,36 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 export default function Contact() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Contact Us | RN Dubai</title>
-          <meta
-            name="description"
-            content="Get in touch with RN Dubai for inquiries about our premium food and beverage trading services. We're here to assist you with any questions or requests."
-          />
-          <meta
-            name="keywords"
-            content="RN Dubai, Contact, food and beverage inquiries, ROWAD ALNAJAH contact, Dubai trading, customer support"
-          />
-          <meta
-            name="author"
-            content="ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
-          />
-          <meta
-            property="og:title"
-            content="Contact Us | RN-Dubai: ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
-          />
-          <meta
-            property="og:description"
-            content="Contact ROWAD ALNAJAH to learn more about our food and beverage products, partnerships, and trading services in Dubai."
-          />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:url"
-            content="https://rn-dubai2.vercel.app/contact-us"
-          />
-        </Helmet>
-      </HelmetProvider>
+      <SEOHelmetContactPage />
 
       <section
         className="m-auto pt-32  w-screen relative pb-10 md:px-20 bg-gradient-to-r from-[#0b3e27] to-[#197149]" // Equivalent to padding-top and padding-bottom: 80px;
@@ -219,5 +190,39 @@ export default function Contact() {
         </div>
       </section>
     </>
+  );
+}
+function SEOHelmetContactPage() {
+  return (
+    <HelmetProvider>
+      <Helmet>
+        <title>Contact Us | RN Dubai</title>
+        <meta
+          name="description"
+          content="Get in touch with RN Dubai for inquiries about our premium food and beverage trading services. We're here to assist you with any questions or requests."
+        />
+        <meta
+          name="keywords"
+          content="RN Dubai, Contact, food and beverage inquiries, ROWAD ALNAJAH contact, Dubai trading, customer support"
+        />
+        <meta
+          name="author"
+          content="ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
+        />
+        <meta
+          property="og:title"
+          content="Contact Us | RN-Dubai: ROWAD ALNAJAH For Food & Beverages Trading co. L.L.C"
+        />
+        <meta
+          property="og:description"
+          content="Contact ROWAD ALNAJAH to learn more about our food and beverage products, partnerships, and trading services in Dubai."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://rn-dubai2.vercel.app/contact-us"
+        />
+      </Helmet>
+    </HelmetProvider>
   );
 }

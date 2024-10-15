@@ -1,11 +1,27 @@
+import { memo } from "react"; // Import React and memo
 import Section1 from "../components/about/Section1";
 import Section2 from "../components/about/Section2";
 import Section3 from "../components/about/Section3";
 import Section4 from "../components/about/Section4";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+const MemoizedSection2 = memo(Section2); // Wrap Section2 with React.memo
+
 export default function About() {
   return (
     <>
+      <SEOHelmetAboutPage />
+      <Section1 />
+      <MemoizedSection2 /> {/* Use the memoized version of Section2 */}
+      <Section3 />
+      <Section4 />
+    </>
+  );
+}
+
+function SEOHelmetAboutPage() {
+  return (
+    <HelmetProvider>
       <Helmet>
         <title>About Us | RN Dubai</title>
         <meta
@@ -34,14 +50,6 @@ export default function About() {
           content="https://rn-dubai2.vercel.app/about-us"
         />
       </Helmet>
-
-      <Section1 />
-
-      <Section2 />
-
-      <Section3 />
-
-      <Section4 />
-    </>
+    </HelmetProvider>
   );
 }
