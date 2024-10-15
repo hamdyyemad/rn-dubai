@@ -6,7 +6,7 @@ export default function SeaProducts() {
         <div
           className="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95"
           style={{
-            background: "url(/assets/home/products/3.jpg) center",
+            background: "url(/assets/home/products/3.webp) center",
             backgroundSize: "cover",
           }}
         >
