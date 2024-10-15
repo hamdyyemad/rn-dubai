@@ -1,8 +1,13 @@
+import React from "react"; // Import React
 import { useRouteError } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ErrorComponent from "../components/ErrorComponent";
+
+// Wrap ErrorComponent with React.memo
+const MemoizedErrorComponent = React.memo(ErrorComponent);
+
 export default function Error() {
   const error = useRouteError();
 
@@ -10,11 +15,13 @@ export default function Error() {
     <>
       <SEOHelmetErrorPage />
       <Header />
-      <ErrorComponent error={error} />
+      <MemoizedErrorComponent error={error} />{" "}
+      {/* Use MemoizedErrorComponent */}
       <Footer />
     </>
   );
 }
+
 function SEOHelmetErrorPage() {
   return (
     <HelmetProvider>
